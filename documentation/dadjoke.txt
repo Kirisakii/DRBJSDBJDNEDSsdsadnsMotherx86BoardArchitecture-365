@@ -1,0 +1,4 @@
+dadjoke (Slash Command)
+- Description: Retrieves a random dad joke.
+- Functionality:
+  - Fetches a random dad joke from an API and sends it as a response.

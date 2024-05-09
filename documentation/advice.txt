@@ -1,0 +1,4 @@
+advice (Slash Command)
+- Description: Retrieves a random piece of advice.
+- Functionality:
+  - Fetches a random piece of advice from an API and sends it as a message.

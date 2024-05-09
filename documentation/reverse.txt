@@ -1,0 +1,7 @@
+reverse (Slash Command)
+- Description: Reverses the provided words.
+- Parameters:
+  - `your_words`: The words to reverse.
+- Functionality:
+  - Reverses the order of the provided words.
+  - Sends the reversed words as a message.

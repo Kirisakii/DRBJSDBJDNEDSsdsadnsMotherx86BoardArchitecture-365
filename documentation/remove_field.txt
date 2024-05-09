@@ -1,0 +1,5 @@
+remove_field (Slash Command)
+   - Parameters:
+     - embed_name, field_id.
+   - Functionality:
+     - Removes a field from an embed based on its position, allowing for content adjustment.

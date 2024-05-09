@@ -1,0 +1,71 @@
+body {
+    font-family: 'gg sans', sans-serif;
+    background: linear-gradient(to right, #880000, #36393f); /* Gradient from dark red to grey */
+    color: #ffffff; /* White text color for better readability */
+    display: flex;
+    height: 100vh;
+    margin: 0;
+}
+
+.left-section, .middle-section, .right-section {
+    overflow-y: auto; /* Enable scrolling */
+    padding: 10px;
+}
+
+.left-section {
+    flex: 2;
+    background-color: #2B2D31; /* Dark background for left section */
+}
+
+.middle-section {
+    flex: 11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #313338; /* Slightly lighter background for middle section */
+}
+
+.right-section {
+    flex: 2;
+    background-color: #2B2D31; /* Dark background for right section */
+}
+
+.category {
+    cursor: pointer;
+    user-select: none; /* Prevent text selection */
+    font-weight: bold; /* Make font bold */
+    font-size: 0.9em; /* Slightly smaller font size */
+}
+
+.toggle-icon {
+    font-size: 0.75em; /* Smaller icon size */
+    font-weight: bold; /* Bold to make it stand out */
+    margin-right: 5px; /* Adjust spacing */
+}
+
+.channels {
+    padding-left: 20px; /* Indent channels under categories */
+}
+
+img {
+    width: 16px; /* Set image width */
+    height: 16px; /* Set image height */
+    margin-right: 10px; /* Space between image and text */
+}
+
+.forum {
+    font-style: italic;
+}
+
+.voice {
+    color: #7289da; /* Discord-like blue color for voice channels */
+}
+
+.member-list {
+    list-style: none;
+    padding: 0;
+}
+
+.member {
+    margin-bottom: 10px;
+}

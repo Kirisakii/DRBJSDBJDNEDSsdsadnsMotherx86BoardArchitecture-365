@@ -1,0 +1,4 @@
+cat (Slash Command)
+- Description: Retrieves a random cat image.
+- Functionality:
+  - Fetches a random cat image URL and sends it as an embedded message.

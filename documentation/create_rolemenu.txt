@@ -1,0 +1,11 @@
+create_rolemenu (Slash Command)
+   - Description: Creates a new role menu that users can interact with to assign or remove roles to themselves.
+   - Parameters:
+     - menuname: Name of the role menu to create.
+     - placeholder: Optional placeholder text that appears in the dropdown menu (default: "Choose a role...").
+     - max_values: Maximum number of roles a user can select at once. Can be a specific number or "max" to allow selection of all roles.
+     - min_values: Minimum number of roles a user must select (default: 1).
+   - Functionality:
+     - Validates and sets the maximum and minimum values for role selections.
+     - Inserts the new role menu settings into the database.
+     - Provides feedback on successful creation or errors during the process.

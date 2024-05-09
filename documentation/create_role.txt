@@ -1,0 +1,4 @@
+create_role Command: (Slash Command)
+   - This command creates a role with specified options such as name, type, and position.
+   - It checks if the user has the required permissions to manage roles.
+   - Depending on the specified role type, it sets appropriate permissions and color for the role and adjusts its position relative to other roles.

@@ -1,0 +1,7 @@
+flags setup_flag_channel (Slash Command)
+- Description: Sets up a channel for the game of flags.
+- Parameters:
+  - `channel`: The text channel to set up for the game of flags.
+- Functionality:
+  - Associates the specified text channel with the game of flags.
+  - Notifies the user about the status of the channel setup.

@@ -1,0 +1,5 @@
+delete_role Command: (Slash Command)
+   - This command deletes a specified role from the server.
+   - It checks if the user has the required permissions to manage roles.
+   - Then, it verifies if the bot has a higher role position than the role it tries to delete and if the role is not managed or the default @everyone role.
+   - If all conditions are met, it proceeds to delete the role.

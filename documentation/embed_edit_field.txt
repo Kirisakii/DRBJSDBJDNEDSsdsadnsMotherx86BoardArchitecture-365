@@ -1,0 +1,5 @@
+embed_edit_field (Slash Command)
+    - Parameters:
+      - embed_name, field_id, title, description.
+    - Functionality:
+      - Edits the title and/or description of a specific field in an embed, useful for content updates.

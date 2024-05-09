@@ -1,0 +1,7 @@
+purge (a tradional command not a slash command. example execution ;prune int) (Slash Command)
+   - Description: Deletes a specified number of messages from the channel where the command is executed.
+   - Parameters:
+     - limit: The number of messages to delete. Defaults to 1 if not specified.
+   - Functionality:
+     - Deletes up to the specified limit of messages, with a maximum of 100 messages per operation to comply with API limits.
+     - Provides feedback on the number of messages deleted.

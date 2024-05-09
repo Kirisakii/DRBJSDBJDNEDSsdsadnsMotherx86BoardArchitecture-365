@@ -1,0 +1,6 @@
+send_through_webhook (Slash Command)
+   - Parameters:
+     - embed_name: Name of the embed to send.
+     - channel_mention: Mention of the channel where the webhook will send the message.
+   - Functionality:
+     - Sends the specified embed through a webhook to the mentioned channel, allowing for advanced message formatting and styling.

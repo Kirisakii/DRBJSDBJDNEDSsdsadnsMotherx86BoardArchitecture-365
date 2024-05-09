@@ -1,0 +1,8 @@
+create_color_role (Slash Command)
+   - Description: Creates a role with a specified color in the server where the command is executed.
+   - Parameters:
+     - role_name: The name of the role to create.
+     - hex_value: The hex color value for the role, e.g., `123456`.
+   - Functionality:
+     - Validates the hex color value and creates a role with the specified name and color.
+     - Provides feedback on the creation of the role or any errors encountered.

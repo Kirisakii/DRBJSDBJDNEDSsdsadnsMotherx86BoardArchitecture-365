@@ -1,0 +1,3 @@
+my_embeds (Slash Command)
+    - Functionality:
+      - Lists all embeds created by the user, providing a quick overview of available content.

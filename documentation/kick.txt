@@ -1,0 +1,8 @@
+kick (Slash Command)
+   - Description: Kicks a specified member from the server.
+   - Parameters:
+     - member: The member to kick.
+     - reason: Optional reason for the kick.
+   - Functionality:
+     - Kicks the member from the server and logs the action with an optional reason.
+     - Provides feedback on the action or any errors encountered.

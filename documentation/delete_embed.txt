@@ -1,0 +1,5 @@
+delete_embed (hybrid command, aliases : del, delete, remove)
+    - Parameters:
+      - embed_name: Name of the embed to delete.
+    - Functionality:
+      - Deletes a specific embed and its associated buttons, ensuring clean removal of unused content.

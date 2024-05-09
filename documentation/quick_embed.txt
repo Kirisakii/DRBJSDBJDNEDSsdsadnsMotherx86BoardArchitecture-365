@@ -1,0 +1,5 @@
+quick_embed (Slash Command)
+   - Parameters:
+     - embed_name, title, description, color, footer_icon_url, footer_text, author_icon_url, author_text, thumbnail_url, image_url.
+   - Functionality:
+     - Quickly creates or updates an embed with the provided parameters, allowing for rapid setup of embeds with custom content.

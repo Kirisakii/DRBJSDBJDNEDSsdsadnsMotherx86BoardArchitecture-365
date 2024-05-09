@@ -1,0 +1,4 @@
+create_channel Command:
+   - This command creates a channel with specified permissions or type.
+   - It checks if the user has the necessary permissions to manage channels.
+   - Depending on the specified channel type (text, voice, or forum), it creates the channel with appropriate attributes such as permissions, topic, tags, and default reaction emoji.

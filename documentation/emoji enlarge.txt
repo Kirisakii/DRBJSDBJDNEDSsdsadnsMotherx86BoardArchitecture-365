@@ -1,0 +1,8 @@
+emoji enlarge (Slash Command)
+- Description: Enlarges a chosen emoji and sends it in a downloadable form.
+- Parameters:
+  - `emoji`: The emoji to enlarge.
+- Functionality:
+  - Fetches the image URL of the provided emoji.
+  - Constructs an embed displaying the enlarged emoji with its name and ID.
+  - Sends the embed with the enlarged emoji.

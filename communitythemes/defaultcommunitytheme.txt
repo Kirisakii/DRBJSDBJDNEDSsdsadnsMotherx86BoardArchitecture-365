@@ -1,0 +1,17 @@
+Generate a Discord server template with categories and channels. Format the output as follows:
+
+
+Category: <Category Name>
+- Channel: <Channel Name> (Private)
+- Channel: <Channel Name> (Read_Only)
+- Channel: <Channel Name>
+- Forum: <Channel Name> (Post_Guidelines="Your guidelines here", Tags=['tag1', 'tag2', 'tag3'], Default_reaction='any suitable emoji')
+- Voice: <Voice Channel Name> (Private)
+- Voice: <Voice Channel Name>
+
+General Insrtuctions:
+- Ensure the template includes categories for General, Community, Gaming, Support, and Off-topic, each with relevant channels. Mark channels that should be private with "(Private)" and channels that are read-only for verified members with "(Read_Only)". Voice channels should be explicitly marked with "Voice:". Typically, server information channels such as rules, self roles, and misc info are marked as "Read_Only". Include voice channels in relevant categories.
+- (Forum), often used for art channels or community discussions channel, suggestions channels etc. should include guidelines, tags (up to 5), and a default reaction emoji.
+- Ensure the theme goes like this : where some channels of a particular category are named in this way: <emoji ┃ channelname>, some are named in this way: <emoji ┇ channelname> and some are named in this way <emoji ・ channelname>, make sure to use these "┃", "┇", "・" for aesthetic channel creation. Example : 🏠┃community, 💬┇general, 🖌️・media, etc. make sure you use different and suitable emoji for each channel.
+- A typical discord has these categories in the following order. welcome > server info > channels > commands > logs > moderation > etc. from top to bottom.
+

@@ -1,0 +1,258 @@
+{
+    "ok": {
+        "buttons": [
+            {
+                "user_id": "747400496402268243",
+                "embed_name": "ok",
+                "label": "hello world",
+                "style": "Primary",
+                "link": null,
+                "emoji": null,
+                "role_to_give": null,
+                "send_embed": null,
+                "custom_message": "```Hello, World```",
+                "custom_id": "000002"
+            },
+            {
+                "user_id": "1041674755595587725",
+                "embed_name": "ok",
+                "label": "my world",
+                "style": "Secondary",
+                "link": null,
+                "emoji": null,
+                "role_to_give": null,
+                "send_embed": null,
+                "custom_message": "My World",
+                "custom_id": "000003"
+            },
+            {
+                "user_id": "1041674755595587725",
+                "embed_name": "ok",
+                "label": "nice",
+                "style": "Secondary",
+                "link": null,
+                "emoji": null,
+                "role_to_give": null,
+                "send_embed": "ok",
+                "custom_message": null,
+                "custom_id": "000004"
+            },
+            {
+                "user_id": "1041674755595587725",
+                "embed_name": "ok",
+                "label": "nice",
+                "style": "Success",
+                "link": null,
+                "emoji": null,
+                "role_to_give": "1235162027622797352",
+                "send_embed": null,
+                "custom_message": "nice",
+                "custom_id": "000005"
+            },
+            {
+                "user_id": "1041674755595587725",
+                "embed_name": "ok",
+                "label": "k",
+                "style": "Secondary",
+                "link": null,
+                "emoji": null,
+                "role_to_give": null,
+                "send_embed": "my",
+                "custom_message": null,
+                "custom_id": "000006"
+            },
+            {
+                "user_id": "1041674755595587725",
+                "embed_name": "ok",
+                "label": "nicerole",
+                "style": "Secondary",
+                "link": null,
+                "emoji": null,
+                "role_to_give": "nice role",
+                "send_embed": null,
+                "custom_message": null,
+                "custom_id": "000008"
+            },
+            {
+                "user_id": "747400496402268243",
+                "embed_name": "ok",
+                "label": "emoji button",
+                "style": "Secondary",
+                "link": null,
+                "emoji": "<a:1698fishwave:1233761268725186620>",
+                "role_to_give": null,
+                "send_embed": null,
+                "custom_message": "nice emoji",
+                "custom_id": "000012"
+            },
+            {
+                "user_id": 747400496402268243,
+                "embed_name": "ok",
+                "label": "nice",
+                "style": "secondary",
+                "link": null,
+                "emoji": null,
+                "role_to_give": "1235196029201023027",
+                "send_embed": null,
+                "custom_message": null,
+                "custom_id": "000020"
+            },
+            {
+                "user_id": 747400496402268243,
+                "embed_name": "ok",
+                "label": "Hello World",
+                "style": "primary",
+                "link": null,
+                "emoji": null,
+                "role_to_give": null,
+                "send_embed": null,
+                "custom_message": "```\nHello World\n```",
+                "custom_id": "000021"
+            }
+        ]
+    },
+    "last_id": 24,
+    "my": {
+        "buttons": [
+            {
+                "user_id": "1041674755595587725",
+                "embed_name": "my",
+                "label": "nice button",
+                "style": "Primary",
+                "link": null,
+                "emoji": null,
+                "role_to_give": null,
+                "send_embed": "hello world",
+                "custom_message": null,
+                "custom_id": "000007"
+            },
+            {
+                "user_id": "1041674755595587725",
+                "embed_name": "my",
+                "label": "nice",
+                "style": "Success",
+                "link": null,
+                "emoji": null,
+                "role_to_give": "1235162027622797352",
+                "send_embed": null,
+                "custom_message": null,
+                "custom_id": "000010"
+            },
+            {
+                "user_id": "1041674755595587725",
+                "embed_name": "my",
+                "label": "NICEROLE",
+                "style": "Danger",
+                "link": null,
+                "emoji": null,
+                "role_to_give": "1235162027622797352",
+                "send_embed": null,
+                "custom_message": null,
+                "custom_id": "000011"
+            }
+        ]
+    },
+    "embed_name_placeholder": {
+        "buttons": [
+            {
+                "user_id": 747400496402268243,
+                "embed_name": "embed_name_placeholder",
+                "label": "Hello World",
+                "style": "secondary",
+                "link": null,
+                "emoji": "",
+                "role_to_give": null,
+                "send_embed": "ok",
+                "custom_message": null,
+                "custom_id": "000015"
+            }
+        ]
+    },
+    "C": {
+        "buttons": [
+            {
+                "user_id": 747400496402268243,
+                "embed_name": "C",
+                "label": "NiceButton",
+                "style": "secondary",
+                "link": null,
+                "emoji": null,
+                "role_to_give": null,
+                "send_embed": "ok",
+                "custom_message": null,
+                "custom_id": "000016"
+            },
+            {
+                "user_id": 747400496402268243,
+                "embed_name": "C",
+                "label": "role",
+                "style": "success",
+                "link": null,
+                "emoji": "<a:f_:1233761388208328715>",
+                "role_to_give": "1235228123302465678",
+                "send_embed": null,
+                "custom_message": null,
+                "custom_id": "000017"
+            },
+            {
+                "user_id": 747400496402268243,
+                "embed_name": "C",
+                "label": "Hello",
+                "style": "secondary",
+                "link": null,
+                "emoji": "<:planet:1223294341204938872>",
+                "role_to_give": null,
+                "send_embed": null,
+                "custom_message": "Default message content",
+                "custom_id": "000018"
+            },
+            {
+                "user_id": 747400496402268243,
+                "embed_name": "C",
+                "label": "Danger",
+                "style": "danger",
+                "link": null,
+                "emoji": null,
+                "role_to_give": null,
+                "send_embed": null,
+                "custom_message": "Danger!",
+                "custom_id": "000019"
+            },
+            {
+                "user_id": 747400496402268243,
+                "embed_name": "C",
+                "label": "Send Role Menu",
+                "style": "primary",
+                "link": null,
+                "emoji": null,
+                "role_to_give": null,
+                "send_embed": null,
+                "custom_message": null,
+                "guild_id": 1226204286812426361,
+                "role_menu_name": "C",
+                "custom_id": "000023"
+            }
+        ]
+    },
+    "nice": {
+        "buttons": []
+    },
+    "cool": {
+        "buttons": [
+            {
+                "user_id": 747400496402268243,
+                "embed_name": "cool",
+                "label": "color roles",
+                "style": "primary",
+                "link": null,
+                "emoji": null,
+                "role_to_give": null,
+                "send_embed": null,
+                "custom_message": null,
+                "guild_id": 1226204286812426361,
+                "role_menu_name": "C",
+                "custom_id": "000024"
+            }
+        ]
+    }
+}

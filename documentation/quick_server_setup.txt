@@ -1,0 +1,5 @@
+quick_server_setup Command: (Slash Command)
+   - This command generates a server structure template based on a description provided by the user.
+   - It validates the selected theme and checks if the server has community features enabled if a community theme is selected.
+   - After deferring the interaction, it loads the instructions from the selected theme file and combines them with the user's description.
+   - It then sends the generated template for confirmation and waits for the user's confirmation before proceeding to create the server structure.

@@ -1,0 +1,7 @@
+flags leaderboard (Slash Command)
+- Description: Displays the top 25 players and their streaks in the game of flags.
+- Parameters:
+  - `mode`: Allows choosing between different game modes (e.g., Europe, Asia, Africa, America).
+- Functionality:
+  - Shows the top players and their streaks in the specified game mode.
+  - Requires a channel set up for the game of flags.

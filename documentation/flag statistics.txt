@@ -1,0 +1,8 @@
+flags statistics (Slash Command)
+- Description: Returns statistics regarding the game of flags.
+- Parameters:
+  - `mode`: Allows choosing between different game modes (e.g., Europe, Asia, Africa, America).
+  - `member` (optional): Specifies the member for which to retrieve statistics. Defaults to the user who invoked the command.
+- Functionality:
+  - Displays statistics related to the specified game mode and member.
+  - Requires a channel set up for the game of flags.

@@ -1,0 +1,5 @@
+delete_button (Slash Command)
+   - Parameters:
+     - custom_id: The custom ID of the button to delete.
+   - Functionality:
+     - Deletes a button with the specified custom ID, if it belongs to the user.

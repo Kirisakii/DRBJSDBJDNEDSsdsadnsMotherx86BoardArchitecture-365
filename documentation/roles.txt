@@ -1,0 +1,8 @@
+roles (Slash Command)
+   - Description: Displays a role menu to the user, allowing them to select roles as defined in the menu settings.
+   - Parameters:
+     - menuname: Name of the role menu to display.
+   - Functionality:
+     - Fetches roles and settings from the database based on the menu name.
+     - Checks if the number of roles meets the required settings for the menu.
+     - Displays the role menu to the user or provides feedback if there are configuration issues.

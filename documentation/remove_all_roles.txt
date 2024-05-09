@@ -1,0 +1,4 @@
+remove_all_roles Command: (Slash Command)
+   - This command removes all roles from the server except for bot roles.
+   - It checks if the user has the necessary permissions to manage roles.
+   - Then, it loops through all roles in the server and deletes those that are not managed by an integration, default roles like @everyone, or roles with a position higher than the bot's highest role.

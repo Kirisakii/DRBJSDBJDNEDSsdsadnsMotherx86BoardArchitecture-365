@@ -1,0 +1,4 @@
+generate_roles Command: (Slash Command)
+   - This command generates roles based on a description provided by the user.
+   - It checks if the user executing the command is the server owner.
+   - Then, it sends an embed containing options for role creation, such as role name, color, and permissions, using a view to handle user input.

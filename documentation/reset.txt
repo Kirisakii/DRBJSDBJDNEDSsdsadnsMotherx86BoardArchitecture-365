@@ -1,0 +1,4 @@
+reset Command: (Slash Command)
+   - This command completely resets the server by deleting all channels and roles.
+   - It checks if the user executing the command is the server owner.
+   - It sends a confirmation message with an embed to verify if the user wants to proceed with the reset.

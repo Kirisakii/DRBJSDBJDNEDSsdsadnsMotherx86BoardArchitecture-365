@@ -1,0 +1,3 @@
+my_buttons (Slash Command)
+   - Functionality:
+     - Lists all buttons created by the user, showing details like label, custom ID, and associated embed name.

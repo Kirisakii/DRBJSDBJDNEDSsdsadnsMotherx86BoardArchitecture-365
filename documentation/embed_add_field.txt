@@ -1,0 +1,5 @@
+embed_add_field (Slash Command)
+   - Parameters:
+     - embed_name, title, description, inline.
+   - Functionality:
+     - Adds a new field to an embed, enhancing the embed's content structure.

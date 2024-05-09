@@ -1,0 +1,430 @@
+[Commands and how they work!]:
+
+1. remove_all_roles Command: (Slash Command)
+   - This command removes all roles from the server except for bot roles.
+   - It checks if the user has the necessary permissions to manage roles.
+   - Then, it loops through all roles in the server and deletes those that are not managed by an integration, default roles like @everyone, or roles with a position higher than the bot's highest role.
+
+2. delete_role Command: (Slash Command)
+   - This command deletes a specified role from the server.
+   - It checks if the user has the required permissions to manage roles.
+   - Then, it verifies if the bot has a higher role position than the role it tries to delete and if the role is not managed or the default @everyone role.
+   - If all conditions are met, it proceeds to delete the role.
+
+3. quick_server_setup Command: (Slash Command)
+   - This command generates a server structure template based on a description provided by the user.
+   - It validates the selected theme and checks if the server has community features enabled if a community theme is selected.
+   - After deferring the interaction, it loads the instructions from the selected theme file and combines them with the user's description.
+   - It then sends the generated template for confirmation and waits for the user's confirmation before proceeding to create the server structure.
+
+4. generate_roles Command: (Slash Command)
+   - This command generates roles based on a description provided by the user.
+   - It checks if the user executing the command is the server owner.
+   - Then, it sends an embed containing options for role creation, such as role name, color, and permissions, using a view to handle user input.
+ 
+5. reset Command: (Slash Command)
+   - This command completely resets the server by deleting all channels and roles.
+   - It checks if the user executing the command is the server owner.
+   - It sends a confirmation message with an embed to verify if the user wants to proceed with the reset.
+
+6. create_channel Command:
+   - This command creates a channel with specified permissions or type.
+   - It checks if the user has the necessary permissions to manage channels.
+   - Depending on the specified channel type (text, voice, or forum), it creates the channel with appropriate attributes such as permissions, topic, tags, and default reaction emoji.
+
+7. move_category Command: (Slash Command)
+   - This command moves a category before or after another category in the server's category list.
+   - It checks if the specified categories exist and if only one of 'put_after' or 'put_before' is specified.
+   - Then, it edits the position of the target category accordingly.
+
+8. create_category Command: (Slash Command)
+   - This command creates a new category in the server.
+   - It checks if the specified category already exists and if only one of 'put_after' or 'put_before' is specified.
+   - Then, it creates the category and adjusts its position relative to the specified target category.
+
+9. create_role Command: (Slash Command)
+   - This command creates a role with specified options such as name, type, and position.
+   - It checks if the user has the required permissions to manage roles.
+   - Depending on the specified role type, it sets appropriate permissions and color for the role and adjusts its position relative to other roles.
+
+[Embed Creation Commands:]
+
+Sure, here's the modified documentation with only the embed_name kept:
+
+Documentation for Bot Commands
+
+ 1. embed_builder (Slash Command)
+   - Description: This command is used to edit an existing embed or create a new one if it does not exist.
+   - Parameters:
+     - embed_name: The name of the embed to edit or create.
+   - Details:
+     - If the embed with the specified embed_name exists, it retrieves the embed and displays it with options to edit various components like title, description, color, etc., through an interactive view.
+     - If the embed does not exist, it creates a new embed with default values and provides the same interactive editing options.
+     - This command is essential for managing custom embeds within the bot, allowing for dynamic content creation and modification.
+
+ 2. send_through_webhook (Slash Command)
+   - Parameters:
+     - embed_name: Name of the embed to send.
+     - channel_mention: Mention of the channel where the webhook will send the message.
+   - Functionality:
+     - Sends the specified embed through a webhook to the mentioned channel, allowing for advanced message formatting and styling.
+
+ 3. my_buttons (Slash Command)
+   - Functionality:
+     - Lists all buttons created by the user, showing details like label, custom ID, and associated embed name.
+
+ 4. delete_button (Slash Command)
+   - Parameters:
+     - custom_id: The custom ID of the button to delete.
+   - Functionality:
+     - Deletes a button with the specified custom ID, if it belongs to the user.
+
+ 5. quick_embed (Slash Command)
+   - Parameters:
+     - embed_name, title, description, color, footer_icon_url, footer_text, author_icon_url, author_text, thumbnail_url, image_url.
+   - Functionality:
+     - Quickly creates or updates an embed with the provided parameters, allowing for rapid setup of embeds with custom content.
+
+ 6. edit_embed (hybrid command aliases: edit)
+   - Parameters:
+     - embed_name: Name of the embed to edit.
+     - property: Specific property of the embed to edit (e.g., title, color).
+     - value: New value for the specified property.
+   - Functionality:
+     - Edits a specific property of an existing embed, providing granular control over embed content.
+
+ 7. add_button (Slash Command)
+   - Parameters:
+     - embed_name, button_label, button_style, link, emoji, role_to_give, send_embed, custom_message.
+   - Functionality:
+     - Adds a button to an embed, with various actions like opening a link, sending a message, or assigning a role.
+
+ 8. embed_add_field (Slash Command)
+   - Parameters:
+     - embed_name, title, description, inline.
+   - Functionality:
+     - Adds a new field to an embed, enhancing the embed's content structure.
+
+ 9. remove_field (Slash Command)
+   - Parameters:
+     - embed_name, field_id.
+   - Functionality:
+     - Removes a field from an embed based on its position, allowing for content adjustment.
+
+ 10. embed_edit_field (Slash Command)
+    - Parameters:
+      - embed_name, field_id, title, description.
+    - Functionality:
+      - Edits the title and/or description of a specific field in an embed, useful for content updates.
+
+ 11. show (hybrid command. recommended to use tradionally with prefix.)
+    - Parameters:
+      - embed_name: Name of the embed to display.
+    - Functionality:
+      - Displays a saved embed by name, useful for previewing embed configurations.
+    - Addtional Info:
+     - You can delete the command message after typing ";show embedname" and deleting the command message of calling ;show embedname command with that way the embed will look more visually apealling.
+    - recommend to use /send_through_webhook command because it is a better approach for displaying approach this command shall be used to view the embed.
+
+ 12. my_embeds (Slash Command)
+    - Functionality:
+      - Lists all embeds created by the user, providing a quick overview of available content.
+
+ 13. delete_embed (hybrid command, aliases : del, delete, remove)
+    - Parameters:
+      - embed_name: Name of the embed to delete.
+    - Functionality:
+      - Deletes a specific embed and its associated buttons, ensuring clean removal of unused content.
+
+These commands provide comprehensive control over embed and button management within the bot, facilitating a wide range of interactive and dynamic content options for users.
+
+[Detailed Info On Embed_Builder:]
+
+ Command Overview
+The `embed_builder` command is designed to facilitate the creation and modification of embeds within the Discord bot environment. This command allows users to either edit an existing embed or create a new one if the specified embed does not exist. It is particularly useful for managing dynamic content that can be customized and displayed in various contexts within a server.
+
+ Parameters
+- embed_name (String): The name of the embed to edit or create. This name acts as a unique identifier for embeds within the database, allowing for easy retrieval and modification.
+
+ Functionality Roadmap
+1. Check for Existing Embed:
+   - The command first checks if an embed with the specified embed_name exists in the database.
+   - If the embed exists, it retrieves the embed data and initializes an interactive view that allows the user to edit various properties of the embed such as title, description, color, images, and more.
+
+2. Create New Embed if Nonexistent:
+   - If no embed exists with the given name, the command creates a new embed with default properties:
+     - Title: "New Embed"
+     - Description: "This is a new embed. Edit it as you wish!"
+     - Color: Black (0x000000)
+   - After creation, the embed is retrieved, and the same interactive view is provided to the user to customize the newly created embed.
+
+3. Interactive Editing:
+   - The interactive view contains buttons that trigger modals for editing different aspects of the embed:
+     - Edit Title: Opens a modal to edit the title of the embed.
+     - Edit Description: Allows editing of the embed's description.
+     - Edit Color: A color picker to change the embed's color.
+     - Edit Image/Thumbnail: Modals for updating image URLs.
+     - Add/Remove/Edit Fields: For managing additional fields within the embed.
+   - Each button is linked to a specific modal that handles the input and updates the embed accordingly.
+
+4. Update and Feedback:
+   - Once an edit is made through any modal, the embed data in the database is updated.
+   - The user receives immediate visual feedback through an updated embed preview, ensuring that changes are applied in real-time.
+
+ Usage Example
+- Command: `/embed_builder embed_name="Monthly Update"`
+  - This command will either fetch the "Monthly Update" embed for editing or create a new one if it doesn't exist.
+
+ Additional Notes
+- The command is designed to be user-friendly, providing interactive components that guide the user through the editing process.
+- It leverages Discord's modal and button interactions to create a seamless experience.
+- This command is essential for servers that require regular updates to embed content, such as community announcements, event details, or dynamic help pages.
+- To display in an emoji inside the embed emoji needs to be mentioned the following way: example emoji: <:planet:1223294341204938872>, this emoji needs to be in a server where the bot is in as well. to get emoji Id simply add a backslash before its name when sending the emoji. exaple \:planet: and send it. unicode emojies can directly be just mentioned.
+
+This detailed functionality allows server administrators and authorized users to manage embed content efficiently, making the `embed_builder` command a versatile tool for dynamic content management within Discord communities.
+
+[RoleMenu Commands:]
+
+ Documentation for Role Management Commands
+
+ 1. create_rolemenu (Slash Command)
+   - Description: Creates a new role menu that users can interact with to assign or remove roles to themselves.
+   - Parameters:
+     - menuname: Name of the role menu to create.
+     - placeholder: Optional placeholder text that appears in the dropdown menu (default: "Choose a role...").
+     - max_values: Maximum number of roles a user can select at once. Can be a specific number or "max" to allow selection of all roles.
+     - min_values: Minimum number of roles a user must select (default: 1).
+   - Functionality:
+     - Validates and sets the maximum and minimum values for role selections.
+     - Inserts the new role menu settings into the database.
+     - Provides feedback on successful creation or errors during the process.
+
+ 2. update_rolemenu (Slash Command)
+   - Description: Adds a new role to an existing role menu and allows the assignment of an emoji to the role through user interaction.
+   - Parameters:
+     - role: The Discord role object to add to the menu.
+     - menuname: Name of the existing role menu to update.
+     - description: Optional description for the role in the menu.
+   - Functionality:
+     - Adds the role to the specified menu in the database with a placeholder for the emoji.
+     - Prompts the user to react with an emoji to associate with the role.
+     - Updates the role entry in the database with the chosen emoji.
+     - Handles timeouts and permissions issues during the emoji selection process.
+
+ 3. roles (Slash Command)
+   - Description: Displays a role menu to the user, allowing them to select roles as defined in the menu settings.
+   - Parameters:
+     - menuname: Name of the role menu to display.
+   - Functionality:
+     - Fetches roles and settings from the database based on the menu name.
+     - Checks if the number of roles meets the required settings for the menu.
+     - Displays the role menu to the user or provides feedback if there are configuration issues.
+
+ General Functionality Across Commands
+- These commands interact with a SQLite database to store and retrieve role menu configurations and role details.
+- They utilize asynchronous operations to handle database interactions and Discord responses efficiently.
+- Error handling is incorporated to manage common issues like missing permissions, missing roles, or database errors.
+- Autocomplete functionality is provided for menu names to enhance user experience by suggesting existing menus as they type.
+
+ Usage Scenarios
+- create_rolemenu: Used by administrators to set up new role menus for events, permissions, or community roles.
+- update_rolemenu: Allows for dynamic updates to role menus, such as adding seasonal roles or special permissions that can be toggled by users.
+- roles: Typically used by members to assign roles to themselves through a user-friendly interface, enhancing self-service capabilities within the Discord server.
+
+These commands form a comprehensive suite for role management within a Discord server, facilitating both the administrative setup of role menus and the end-user experience of role selection.
+
+
+[Misc Commands:]
+
+ Documentation for Bot Commands
+
+ 1. purge (a tradional command not a slash command. example execution ;prune int) (Slash Command)
+   - Description: Deletes a specified number of messages from the channel where the command is executed.
+   - Parameters:
+     - limit: The number of messages to delete. Defaults to 1 if not specified.
+   - Functionality:
+     - Deletes up to the specified limit of messages, with a maximum of 100 messages per operation to comply with API limits.
+     - Provides feedback on the number of messages deleted.
+
+ 2. list_servers (Owner Only) 
+   - Description: Lists all servers the bot is currently a member of.
+   - Functionality:
+     - Generates an embed listing each server's name and member count.
+     - This command is restricted to bot owners.
+
+ 3. backdoor (Owner only) 
+   - Description: Lists all servers the bot is in with an option to join via an invite link.
+   - Functionality:
+     - Checks for administrative permissions to create invites.
+     - Generates an embed with links to join the servers where the bot has the required permissions.
+     - This command is restricted to bot owners.
+
+ 4. leave_server (Owner only)
+   - Description: Commands the bot to leave a specified server.
+   - Parameters:
+     - server_id: The ID of the server to leave.
+   - Functionality:
+     - The bot attempts to leave the server with the given ID and provides feedback on the action.
+
+ 5. create_color_role (Slash Command)
+   - Description: Creates a role with a specified color in the server where the command is executed.
+   - Parameters:
+     - role_name: The name of the role to create.
+     - hex_value: The hex color value for the role, e.g., `123456`.
+   - Functionality:
+     - Validates the hex color value and creates a role with the specified name and color.
+     - Provides feedback on the creation of the role or any errors encountered.
+
+ 6. kick (Slash Command)
+   - Description: Kicks a specified member from the server.
+   - Parameters:
+     - member: The member to kick.
+     - reason: Optional reason for the kick.
+   - Functionality:
+     - Kicks the member from the server and logs the action with an optional reason.
+     - Provides feedback on the action or any errors encountered.
+
+ General Functionality Across Commands
+- These commands are designed to manage server settings and moderation tasks efficiently.
+- They include error handling to manage permissions issues and other common problems.
+- Commands like list_servers, backdoor, and leave_server are restricted to bot owners for security reasons.
+- Feedback is provided directly in the channel where commands are executed, with some commands using ephemeral messages for privacy.
+- Owner only : This command can only be used by the bot's owner. refrain from mentioning this command publicaly
+
+ Usage Scenarios
+- purge: Useful for moderators to quickly clear spam or inappropriate messages.
+- list_servers and backdoor: Help bot owners manage the bot's presence across multiple servers.
+- leave_server: Allows bot owners to remove the bot from servers as needed. 
+- create_color_role: Enables easy role management with custom colors for organizational purposes.
+- kick: Essential for maintaining community standards and enforcing server rules.
+
+These commands provide essential tools for bot and server management, enhancing the functionality and usability of the bot within Discord communities.
+
+[Fun Commands:]
+Sure, here's the documentation for the provided set of commands:
+
+---
+
+ Command Documentation
+
+ 1. connect4 (Slash Command)
+- Description: Initiates a game of Connect 4 between two players.
+- Parameters:
+  - `player2`: The player to challenge.
+- Functionality:
+  - Starts a Connect 4 game between the user who initiates the command (`player1`) and the specified `player2`.
+  - Players take turns making moves by reacting with numbers (1-7) corresponding to columns.
+  - The game continues until one player wins or the game reaches a draw.
+
+ 2. emoji enlarge (Slash Command)
+- Description: Enlarges a chosen emoji and sends it in a downloadable form.
+- Parameters:
+  - `emoji`: The emoji to enlarge.
+- Functionality:
+  - Fetches the image URL of the provided emoji.
+  - Constructs an embed displaying the enlarged emoji with its name and ID.
+  - Sends the embed with the enlarged emoji.
+
+ 3. emoji steal (Slash Command)
+- Description: Steals a provided emoji and adds it to the current guild.
+- Parameters:
+  - `emoji`: The emoji to steal.
+- Functionality:
+  - Retrieves the URL of the provided emoji.
+  - Prompts the user to provide a name for the stolen emoji within a 15-second window.
+  - Creates a custom emoji in the current guild using the provided emoji URL and the chosen name.
+
+ 4. flags setup_flag_channel (Slash Command)
+- Description: Sets up a channel for the game of flags.
+- Parameters:
+  - `channel`: The text channel to set up for the game of flags.
+- Functionality:
+  - Associates the specified text channel with the game of flags.
+  - Notifies the user about the status of the channel setup.
+
+ 5. flags game (Slash Command)
+- Description: Starts a minigame of Game of Flags.
+- Parameters:
+  - `mode`: Allows choosing between different game modes (e.g., Europe, Asia, Africa, America).
+- Functionality:
+  - Initiates a minigame of Game of Flags in the specified mode.
+  - Requires a channel set up for the game of flags.
+
+ 6. flags statistics (Slash Command)
+- Description: Returns statistics regarding the game of flags.
+- Parameters:
+  - `mode`: Allows choosing between different game modes (e.g., Europe, Asia, Africa, America).
+  - `member` (optional): Specifies the member for which to retrieve statistics. Defaults to the user who invoked the command.
+- Functionality:
+  - Displays statistics related to the specified game mode and member.
+  - Requires a channel set up for the game of flags.
+
+ 7. flags leaderboard (Slash Command)
+- Description: Displays the top 25 players and their streaks in the game of flags.
+- Parameters:
+  - `mode`: Allows choosing between different game modes (e.g., Europe, Asia, Africa, America).
+- Functionality:
+  - Shows the top players and their streaks in the specified game mode.
+  - Requires a channel set up for the game of flags.
+
+ 8. dadjoke (Slash Command)
+- Description: Retrieves a random dad joke.
+- Functionality:
+  - Fetches a random dad joke from an API and sends it as a response.
+
+ 9. dog (Slash Command)
+- Description: Retrieves a random dog image.
+- Functionality:
+  - Fetches a random dog image URL and sends it as an embedded message.
+
+ 10. cat (Slash Command)
+- Description: Retrieves a random cat image.
+- Functionality:
+  - Fetches a random cat image URL and sends it as an embedded message.
+
+ 11. wyr (Slash Command)
+- Description: Presents a "Would You Rather" scenario.
+- Functionality:
+  - Fetches a "Would You Rather" scenario from an API and sends it as a message.
+  - Allows users to react with their preferred choice.
+
+ 12. emojify (Slash Command)
+- Description: Converts text into emojis.
+- Parameters:
+  - `text`: The text to transform into emojis.
+- Functionality:
+  - Transforms each character of the input text into corresponding emojis.
+  - Sends the transformed text as a message.
+
+ 13. choose (Slash Command)
+- Description: Chooses randomly from provided options.
+- Parameters:
+  - `choice1` to `choice5`: Choices from which to randomly select.
+- Functionality:
+  - Randomly selects one option from the provided choices.
+  - Sends the chosen option as a message.
+
+ 14. reverse (Slash Command)
+- Description: Reverses the provided words.
+- Parameters:
+  - `your_words`: The words to reverse.
+- Functionality:
+  - Reverses the order of the provided words.
+  - Sends the reversed words as a message.
+
+ 15. timer (Slash Command)
+- Description: Sets a timer for a specified duration.
+- Parameters:
+  - `time`: The time duration in seconds, minutes, hours, days, weeks, months, or years.
+- Functionality:
+  - Sets a timer for the specified duration.
+  - Sends a notification when the timer expires.
+
+ 16. advice (Slash Command)
+- Description: Retrieves a random piece of advice.
+- Functionality:
+  - Fetches a random piece of advice from an API and sends it as a message.
+
+---
+
+These commands offer a variety of functionalities ranging from game interactions to fetching random images and generating content for entertainment purposes. Each command is designed to provide a specific functionality and accepts appropriate parameters for customization.

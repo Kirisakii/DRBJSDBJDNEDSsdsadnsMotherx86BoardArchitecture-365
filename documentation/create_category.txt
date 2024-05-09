@@ -1,0 +1,4 @@
+create_category Command: (Slash Command)
+   - This command creates a new category in the server.
+   - It checks if the specified category already exists and if only one of 'put_after' or 'put_before' is specified.
+   - Then, it creates the category and adjusts its position relative to the specified target category.

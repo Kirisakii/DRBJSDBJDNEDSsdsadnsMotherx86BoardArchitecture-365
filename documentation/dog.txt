@@ -1,0 +1,4 @@
+dog (Slash Command)
+- Description: Retrieves a random dog image.
+- Functionality:
+  - Fetches a random dog image URL and sends it as an embedded message.

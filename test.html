@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Structure</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const categories = document.querySelectorAll('.category');
+
+            categories.forEach(category => {
+                category.addEventListener('click', function() {
+                    const channels = this.nextElementSibling;
+                    if (channels.style.display === 'none') {
+                        channels.style.display = 'block';
+                        this.querySelector('.toggle-icon').textContent = 'v';
+                    } else {
+                        channels.style.display = 'none';
+                        this.querySelector('.toggle-icon').textContent = '>';
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="left-section">
+        <!-- Server Structure -->
+        <div class="category">
+            <span class="toggle-icon">></span> General
+        </div>
+        <div class="channels" style="display: none;">
+            <div class="channel"><img src="channel.png" alt="Channel">announcements (Read-Only)</div>
+            <div class="channel"><img src="channel.png" alt="Channel">introductions</div>
+            <div class="channel"><img src="channel.png" alt="Channel">general_chat</div>
+            <div class="forum"><img src="forum.png" alt="Forum">feedback_and_suggestions</div>
+            <div class="voice"><img src="voice.png" alt="Voice">General Lounge</div>
+            <div class="voice"><img src="voice.png" alt="Voice">Chill Zone</div>
+        </div>
+        <!-- Additional categories and channels as needed -->
+    </div>
+    <div class="middle-section">
+        <!-- Promotional Image -->
+        <img src="botpromo.png" alt="Promotional Image" style="width: 600px; height: 300px;">
+    </div>
+    <div class="right-section">
+        <!-- Simulated Member List -->
+        <ul class="member-list">
+            <li class="member">Member 1</li>
+            <li class="member">Member 2</li>
+            <li class="member">Member 3</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+emojify (Slash Command)
+- Description: Converts text into emojis.
+- Parameters:
+  - `text`: The text to transform into emojis.
+- Functionality:
+  - Transforms each character of the input text into corresponding emojis.
+  - Sends the transformed text as a message.

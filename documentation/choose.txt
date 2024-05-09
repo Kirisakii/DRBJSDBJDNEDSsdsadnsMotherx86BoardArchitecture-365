@@ -1,0 +1,7 @@
+choose (Slash Command)
+- Description: Chooses randomly from provided options.
+- Parameters:
+  - `choice1` to `choice5`: Choices from which to randomly select.
+- Functionality:
+  - Randomly selects one option from the provided choices.
+  - Sends the chosen option as a message.

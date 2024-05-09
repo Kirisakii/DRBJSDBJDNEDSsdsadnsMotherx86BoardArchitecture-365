@@ -1,0 +1,7 @@
+timer (Slash Command)
+- Description: Sets a timer for a specified duration.
+- Parameters:
+  - `time`: The time duration in seconds, minutes, hours, days, weeks, months, or years.
+- Functionality:
+  - Sets a timer for the specified duration.
+  - Sends a notification when the timer expires.

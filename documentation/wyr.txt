@@ -1,0 +1,5 @@
+wyr (Slash Command)
+- Description: Presents a "Would You Rather" scenario.
+- Functionality:
+  - Fetches a "Would You Rather" scenario from an API and sends it as a message.
+  - Allows users to react with their preferred choice.

@@ -1,0 +1,8 @@
+connect4 (Slash Command)
+- Description: Initiates a game of Connect 4 between two players.
+- Parameters:
+  - `player2`: The player to challenge.
+- Functionality:
+  - Starts a Connect 4 game between the user who initiates the command (`player1`) and the specified `player2`.
+  - Players take turns making moves by reacting with numbers (1-7) corresponding to columns.
+  - The game continues until one player wins or the game reaches a draw.

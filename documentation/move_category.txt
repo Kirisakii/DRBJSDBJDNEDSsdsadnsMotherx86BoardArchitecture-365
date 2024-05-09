@@ -1,0 +1,4 @@
+move_category Command: (Slash Command)
+   - This command moves a category before or after another category in the server's category list.
+   - It checks if the specified categories exist and if only one of 'put_after' or 'put_before' is specified.
+   - Then, it edits the position of the target category accordingly.

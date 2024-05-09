@@ -1,0 +1,7 @@
+flags game (Slash Command)
+- Description: Starts a minigame of Game of Flags.
+- Parameters:
+  - `mode`: Allows choosing between different game modes (e.g., Europe, Asia, Africa, America).
+- Functionality:
+  - Initiates a minigame of Game of Flags in the specified mode.
+  - Requires a channel set up for the game of flags.

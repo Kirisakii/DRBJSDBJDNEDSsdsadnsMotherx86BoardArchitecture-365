@@ -1,0 +1,8 @@
+emoji steal (Slash Command)
+- Description: Steals a provided emoji and adds it to the current guild.
+- Parameters:
+  - `emoji`: The emoji to steal.
+- Functionality:
+  - Retrieves the URL of the provided emoji.
+  - Prompts the user to provide a name for the stolen emoji within a 15-second window.
+  - Creates a custom emoji in the current guild using the provided emoji URL and the chosen name.

@@ -1,0 +1,53 @@
+embed_builder (Slash Command)
+   - Description: This command is used to edit an existing embed or create a new one if it does not exist.
+   - Parameters:
+     - embed_name: The name of the embed to edit or create.
+   - Details:
+     - If the embed with the specified embed_name exists, it retrieves the embed and displays it with options to edit various components like title, description, color, etc., through an interactive view.
+     - If the embed does not exist, it creates a new embed with default values and provides the same interactive editing options.
+     - This command is essential for managing custom embeds within the bot, allowing for dynamic content creation and modification.
+
+Detailed Info On Embed_Builder:
+
+ Command Overview
+The `embed_builder` command is designed to facilitate the creation and modification of embeds within the Discord bot environment. This command allows users to either edit an existing embed or create a new one if the specified embed does not exist. It is particularly useful for managing dynamic content that can be customized and displayed in various contexts within a server.
+
+ Parameters
+- embed_name (String): The name of the embed to edit or create. This name acts as a unique identifier for embeds within the database, allowing for easy retrieval and modification.
+
+ Functionality Roadmap
+1. Check for Existing Embed:
+   - The command first checks if an embed with the specified embed_name exists in the database.
+   - If the embed exists, it retrieves the embed data and initializes an interactive view that allows the user to edit various properties of the embed such as title, description, color, images, and more.
+
+2. Create New Embed if Nonexistent:
+   - If no embed exists with the given name, the command creates a new embed with default properties:
+     - Title: "New Embed"
+     - Description: "This is a new embed. Edit it as you wish!"
+     - Color: Black (0x000000)
+   - After creation, the embed is retrieved, and the same interactive view is provided to the user to customize the newly created embed.
+
+3. Interactive Editing:
+   - The interactive view contains buttons that trigger modals for editing different aspects of the embed:
+     - Edit Title: Opens a modal to edit the title of the embed.
+     - Edit Description: Allows editing of the embed's description.
+     - Edit Color: A color picker to change the embed's color.
+     - Edit Image/Thumbnail: Modals for updating image URLs.
+     - Add/Remove/Edit Fields: For managing additional fields within the embed.
+   - Each button is linked to a specific modal that handles the input and updates the embed accordingly.
+
+4. Update and Feedback:
+   - Once an edit is made through any modal, the embed data in the database is updated.
+   - The user receives immediate visual feedback through an updated embed preview, ensuring that changes are applied in real-time.
+
+ Usage Example
+- Command: `/embed_builder embed_name="Monthly Update"`
+  - This command will either fetch the "Monthly Update" embed for editing or create a new one if it doesn't exist.
+
+ Additional Notes
+- The command is designed to be user-friendly, providing interactive components that guide the user through the editing process.
+- It leverages Discord's modal and button interactions to create a seamless experience.
+- This command is essential for servers that require regular updates to embed content, such as community announcements, event details, or dynamic help pages.
+- To display in an emoji inside the embed emoji needs to be mentioned the following way: example emoji: <:planet:1223294341204938872>, this emoji needs to be in a server where the bot is in as well. to get emoji Id simply add a backslash before its name when sending the emoji. exaple \:planet: and send it. unicode emojies can directly be just mentioned.
+
+This detailed functionality allows server administrators and authorized users to manage embed content efficiently, making the `embed_builder` command a versatile tool for dynamic content management within Discord communities.

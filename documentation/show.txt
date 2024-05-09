@@ -1,0 +1,8 @@
+show (hybrid command. recommended to use tradionally with prefix.)
+    - Parameters:
+      - embed_name: Name of the embed to display.
+    - Functionality:
+      - Displays a saved embed by name, useful for previewing embed configurations.
+    - Addtional Info:
+     - You can delete the command message after typing ";show embedname" and deleting the command message of calling ;show embedname command with that way the embed will look more visually apealling.
+    - recommend to use /send_through_webhook command because it is a better approach for displaying approach this command shall be used to view the embed.

@@ -1,0 +1,11 @@
+Generate a list of Discord server roles based on the following description. Include role names and their corresponding hex color values if necessary. Use hex color values (#000000 format) only for color roles or when a role is specifically mentioned to have a color. Format the output as follows:
+
+Role: (permission) (Hex: #<HexColorCode>) <Role Name> 
+
+Important Instructions:
+- Ensure role names are unique.
+- Colorize only those roles meant to be color roles, indicated by the (color) permission.
+- Mention permissions for roles as one of the following: (default), (color), (admin), (mod), (staff), (trial_mod), (level). Permissions are predefined and vary by role type.
+- For color roles, provide hex color values in the format: Hex: #<HexColorCode>. For non-color roles, omit the Hex part.
+
+

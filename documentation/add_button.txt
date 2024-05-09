@@ -1,0 +1,5 @@
+add_button (Slash Command)
+   - Parameters:
+     - embed_name, button_label, button_style, link, emoji, role_to_give, send_embed, custom_message.
+   - Functionality:
+     - Adds a button to an embed, with various actions like opening a link, sending a message, or assigning a role.
